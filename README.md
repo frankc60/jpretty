@@ -1,7 +1,7 @@
 # jpretty
 prettier display of json, using dot delimiter and a key = value output.
 
-[![Join the chat at https://gitter.im/jprettyMod/Lobby](https://badges.gitter.im/jStrip_npm/Lobby.svg)]
+[![Join the chat at https://gitter.im/jprettyMod/Lobby](https://badges.gitter.im/jprettyMod/Lobby.svg)]
 
 ```js
 let jPretty = require("jpretty");
