@@ -48,11 +48,7 @@ console.log(pJson1);
 ```
 
 ```js
-console.log(json1.batters.batter[1].type);
-```
+console.log(json1.batters.batter[1].type); //Chocolate
+console.log(json1.topping[2].type); //Sugar
 
-Console Output:
-
-```sh
-Chocolate
 ```

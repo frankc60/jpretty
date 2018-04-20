@@ -27,3 +27,4 @@ let x = jPretty(a);
 console.log(x);
 
 console.log(a.batters.batter[1].type);
+console.log(a.topping[2].type);
