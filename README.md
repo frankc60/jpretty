@@ -1,6 +1,6 @@
 # jpretty
 
-![Join the chat at https://gitter.im/jprettyMod/Lobby](https://badges.gitter.im/jprettyMod/Lobby.svg)
+[![Join the chat at https://gitter.im/jprettyMod/Lobby](https://badges.gitter.im/jprettyMod/Lobby.svg)](https://gitter.im/jprettyMod/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Prettier display of json, using dot delimiter and a key = value output.
 
