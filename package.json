@@ -1,0 +1,14 @@
+{
+  "name": "jpretty",
+  "version": "1.0.0",
+  "description": "pretty layout of json",
+  "main": "jPretty.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "json"
+  ],
+  "author": "frankc60",
+  "license": "MIT"
+}
