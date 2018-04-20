@@ -1,6 +1,6 @@
 # jpretty
 
-[![Join the chat at https://gitter.im/jprettyMod/Lobby](https://badges.gitter.im/jprettyMod/Lobby.svg)]
+![Join the chat at https://gitter.im/jprettyMod/Lobby](https://badges.gitter.im/jprettyMod/Lobby.svg)
 
 Prettier display of json, using dot delimiter and a key = value output.
 
@@ -8,24 +8,24 @@ Prettier display of json, using dot delimiter and a key = value output.
 let jPretty = require("jpretty");
 
 let json1 = {
-	"id": "0001",
-	"type": "donut",
-	"name": "Cake",
-	"ppu": 0.55,
-	"batters":
-		{
-			"batter":
-				[
-					{ "id": "1001", "type": "Regular" },
-					{ "id": "1002", "type": "Chocolate" },
-				]
-		},
-	"topping":
-		[
-			{ "id": "5001", "type": "None" },
-			{ "id": "5002", "type": "Glazed" },
-			{ "id": "5005", "type": "Sugar" },
-		]
+    "id": "0001",
+    "type": "donut",
+    "name": "Cake",
+    "ppu": 0.55,
+    "batters":
+      {
+        "batter":
+          [
+            { "id": "1001", "type": "Regular" },
+            { "id": "1002", "type": "Chocolate" },
+          ]
+      },
+    "topping":
+      [
+        { "id": "5001", "type": "None" },
+        { "id": "5002", "type": "Glazed" },
+        { "id": "5005", "type": "Sugar" },
+      ]
 };
 
 let pJson1 = jPretty(json1);
