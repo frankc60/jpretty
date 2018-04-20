@@ -46,3 +46,11 @@ console.log(pJson1);
 {}.topping.[2].id = 5005
 {}.topping.[2].type = Sugar
 ```
+
+```js
+console.log(a.batters.batter[1].type);
+```
+
+```sh
+Chocolate
+```
