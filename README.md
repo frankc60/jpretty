@@ -35,16 +35,16 @@ console.log(pJson1);
 {}.type = donut
 {}.name = Cake
 {}.ppu = 0.55
-{}.batters.batter.[0].id = 1001
-{}.batters.batter.[0].type = Regular
-{}.batters.batter.[1].id = 1002
-{}.batters.batter.[1].type = Chocolate
-{}.topping.[0].id = 5001
-{}.topping.[0].type = None
-{}.topping.[1].id = 5002
-{}.topping.[1].type = Glazed
-{}.topping.[2].id = 5005
-{}.topping.[2].type = Sugar
+{}.batters.batter[0].id = 1001
+{}.batters.batter[0].type = Regular
+{}.batters.batter[1].id = 1002
+{}.batters.batter[1].type = Chocolate
+{}.topping[0].id = 5001
+{}.topping[0].type = None
+{}.topping[1].id = 5002
+{}.topping[1].type = Glazed
+{}.topping[2].id = 5005
+{}.topping[2].type = Sugar
 ```
 
 ```js
