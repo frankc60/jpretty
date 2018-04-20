@@ -1,5 +1,5 @@
 # jpretty
-prettier display of json, in a key = value output.
+prettier display of json, using dot delimiter and a key = value output.
 
 ```js
 let jPretty = require("jpretty");
