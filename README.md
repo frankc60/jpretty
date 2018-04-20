@@ -48,8 +48,10 @@ console.log(pJson1);
 ```
 
 ```js
-console.log(a.batters.batter[1].type);
+console.log(json1.batters.batter[1].type);
 ```
+
+Console Output:
 
 ```sh
 Chocolate
