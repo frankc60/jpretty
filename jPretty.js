@@ -13,7 +13,7 @@ const prettyJson = (strEvents) => {
       if (typeof events[i] === 'object') {
         let rtn;
         if (Object.prototype.toString.call(events) === '[object Array]') {
-          rtn = (`${top}.[${i}]`);
+          rtn = (`${top}[${i}]`);
         } else { rtn = (`${top}.${i}`); }
         pJson(events[i], rtn);
       } else if (Object.prototype.toString.call(events) === '[object Array]') {
