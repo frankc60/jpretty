@@ -1,5 +1,7 @@
 # jpretty
 
+[![Coverage Status](https://coveralls.io/repos/github/frankc60/jpretty/badge.svg)](https://coveralls.io/github/frankc60/jpretty)
+[![Build Status](https://travis-ci.org/frankc60/jpretty.svg?branch=master)](https://travis-ci.org/frankc60/jpretty)
 [![Join the chat at https://gitter.im/jprettyMod/Lobby](https://badges.gitter.im/jprettyMod/Lobby.svg)](https://gitter.im/jprettyMod/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Prettier display of json, using dot delimiter and a key = value output.
