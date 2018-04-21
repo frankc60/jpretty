@@ -69,7 +69,8 @@ console.log(json1.topping[2].type); //Sugar
 ### Another example
 
 ```js
-console.log(jPretty({"a":1, "b":2, "c":[1,2,3,4],"d":{"da":[1,2,3],"db":{ "dba": 123}}})) 
+let json2 = {"a":1, "b":2, "c":[1,2,3,4],"d":{"da":[1,2,3,{"daa": 4, "dab":5}],"db":{ "dba": 123}}};
+console.log(jPretty(json2));
 ```
 
 ```sh
@@ -82,5 +83,7 @@ console.log(jPretty({"a":1, "b":2, "c":[1,2,3,4],"d":{"da":[1,2,3],"db":{ "dba":
 {}.d.da[0] = 1
 {}.d.da[1] = 2
 {}.d.da[2] = 3
+{}.d.da[3].daa = 4
+{}.d.da[3].dab = 5
 {}.d.db.dba = 123
 ```
