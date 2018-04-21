@@ -12,6 +12,8 @@ JSON is used alot in APIs: sending and retrieving data across the Web.
 
 For more info check out [w3schools.com](https://www.w3schools.com/js/js_json_intro.asp).
 
+## jpretty examples
+
 ```js
 let jPretty = require("jpretty");
 
