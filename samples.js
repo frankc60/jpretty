@@ -29,4 +29,14 @@ console.log(x);
 console.log(a.batters.batter[1].type);
 console.log(a.topping[2].type);
 
-console.log(jPretty({"a":1, "b":2, "c":[1,2,3,4],"d":{"da":[1,2,3,{"daa": 4, "dab":5}],"db":{ "dba": 123}}})) 
+//valid
+console.log(jPretty('{ "a": 1, "b": 2}')); 
+console.log(jPretty({ a: 1, b: 2})); 
+console.log(jPretty({ "a": 1, "b": 2})); 
+console.log(jPretty({ 'a': 1, 'b': 2})); 
+
+//invalid
+console.log(jPretty("{ 'a': 1, 'b': 2}")); 
+console.log(jPretty("{ a: 1, b: 2}"));
+
+

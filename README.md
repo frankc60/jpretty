@@ -87,3 +87,22 @@ console.log(jPretty(json2));
 {}.d.da[3].dab = 5
 {}.d.db.dba = 123
 ```
+
+## syntax
+
+`JSON` data by definition is written as name/value pairs, consisting of a field name (in double quotes), followed by a colon, followed by a value: `{ "name" : "value" }`
+
+`jpretty` trys to convert data into `json`. The following are valid and invalid syntax `jpretty` will convert.
+
+```js
+//valid
+console.log(jPretty('{ "a": 1, "b": 2}'));
+console.log(jPretty({ a: 1, b: 2}));
+console.log(jPretty({ "a": 1, "b": 2}));
+console.log(jPretty({ 'a': 1, 'b': 2}));
+
+//invalid
+//jpretty will not accept json surrounded by double quotes
+console.log(jPretty("{ 'a': 1, 'b': 2}"));
+console.log(jPretty("{ a: 1, b: 2}"));
+```
