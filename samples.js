@@ -28,3 +28,5 @@ console.log(x);
 
 console.log(a.batters.batter[1].type);
 console.log(a.topping[2].type);
+
+console.log(jPretty({"a":1, "b":2, "c":[1,2,3,4],"d":{"da":[1,2,3],"db":{ "dba": 123}}})) 

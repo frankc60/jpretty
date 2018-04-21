@@ -65,3 +65,22 @@ console.log(json1.batters.batter[1].type); //Chocolate
 console.log(json1.topping[2].type); //Sugar
 
 ```
+
+### Another example
+
+```js
+console.log(jPretty({"a":1, "b":2, "c":[1,2,3,4],"d":{"da":[1,2,3],"db":{ "dba": 123}}})) 
+```
+
+```sh
+{}.a = 1
+{}.b = 2
+{}.c[0] = 1
+{}.c[1] = 2
+{}.c[2] = 3
+{}.c[3] = 4
+{}.d.da[0] = 1
+{}.d.da[1] = 2
+{}.d.da[2] = 3
+{}.d.db.dba = 123
+```
