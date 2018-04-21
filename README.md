@@ -7,7 +7,7 @@
 Make `json` more Pretty. Display `json` using dot delimiter and a key = value output.
 
 ## What is json ?
-JSON stands for JavaScript Object Notion, and is a syntax for storing and exchanging data written in text, that can be converted into JavaScript object notation, making it easy to work with.
+JSON stands for **J**ava**S**cript **O**bject **N**otion, and is a syntax for storing and exchanging data written in text, that can be converted into JavaScript object notation, making it easy to work with.
 JSON is used alot in APIs: sending and retrieving data across the Web.
 
 For more info check out [w3schools.com](https://www.w3schools.com/js/js_json_intro.asp).
