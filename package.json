@@ -4,7 +4,8 @@
   "description": "pretty layout of json",
   "main": "jPretty.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nyc mocha tests",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "keywords": [
     "json",
@@ -15,5 +16,11 @@
     "url": "https://github.com/frankc60/jpretty.git"
   },
   "author": "frankc60",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "*",
+    "coveralls": "*",
+    "mocha": "*",
+    "nyc": "*"
+  }
 }
