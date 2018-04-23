@@ -38,10 +38,12 @@ c:
 d: "end"
 };
 
-let c = '{"a":1, "b":2}';
+let c = '{"a" : 1, "b" : 2}';
 
 let d = "{a4:1, b4:2}";
 let e = "{'a':1, 'b':2}";
+
+
 
 
 const aj = jPretty(a);
