@@ -92,7 +92,7 @@ console.log(jPretty(json2));
 
 `JSON` data by definition is written as name/value pairs, consisting of a field name (in double quotes), followed by a colon, followed by a value: `{ "name" : "value" }`
 
-`jpretty` trys to convert data into `json`. The following are valid and invalid syntax `jpretty` will convert.
+`jpretty` accepts multiple styles as it converts the input into `json`. The following are valid syntax.
 
 ```js
 //valid
@@ -100,9 +100,10 @@ console.log(jPretty('{ "a": 1, "b": 2}'));
 console.log(jPretty({ a: 1, b: 2}));
 console.log(jPretty({ "a": 1, "b": 2}));
 console.log(jPretty({ 'a': 1, 'b': 2}));
+console.log(jPretty("{ 'a': 1, 'b': 2}"));
+console.log(jPretty("{ a: 1, b: 2}"));
 
 //invalid
 //jpretty will not accept json surrounded by double quotes
-console.log(jPretty("{ 'a': 1, 'b': 2}"));
-console.log(jPretty("{ a: 1, b: 2}"));
+// ?? since v.1.1 all inputs will work.
 ```
