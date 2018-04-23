@@ -49,12 +49,13 @@ const jPretty = (obj) => {
     try {
      // console.log("make into a string")
       const s = JSON.stringify(obj);
-     // if (s && typeof s === 'object') {
-     //   return Error(`not a json object: ${typeof s}` );
+      const k = JSON.parse(JSON.stringify(obj));
+    //  if (!s && typeof s === 'object') {
+        gl = s;
      // }
-      gl = s;
+    //  throw Error("not json "+ JSON.stringify(obj))
     } catch (er) {
-     // return Error(`not a json object: ${er}`);
+    // console.log("error " + er)
     }
   }
 
