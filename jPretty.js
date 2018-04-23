@@ -39,20 +39,24 @@ const jPretty = (obj) => {
   if(typeof obj === "string") {
     obj = obj.replace(/\s/g,"");
     obj = obj.replace(/'/g,'"');
-    obj = obj.replace(/([,|{|\s|])([a-zA-Z0-9]*?)([\s|]*\:)/g,'$1"$2"$3');
   }
   let gl;
   try {
+    
     const p = JSON.parse(obj); 
     gl = obj; // already stringified
   } catch (e) { // not stringified
     try {
-     // console.log("make into a string")
+      if(typeof obj === "string") {
+        obj = obj.replace(/([,|{|\s|])([a-zA-Z0-9]*?)([\s|]*\:)/g,'$1"$2"$3');
+      }
+      // console.log("make into a string")
+    
       const s = JSON.stringify(obj);
       const k = JSON.parse(JSON.stringify(obj));
-    //  if (!s && typeof s === 'object') {
+ //     if (k && typeof k === 'object') {
         gl = s;
-     // }
+  //    }
     //  throw Error("not json "+ JSON.stringify(obj))
     } catch (er) {
     // console.log("error " + er)

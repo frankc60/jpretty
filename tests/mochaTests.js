@@ -43,7 +43,7 @@ let c = '{"a" : 1, "b" : 2}';
 let d = "{a4:1, b4:2}";
 let e = "{'a':1, 'b':2}";
 
-let f = {"time":{"updated":"Apr 23, 2018 21:19:00 UTC","updatedISO":"2018-04-23T21:19:00+00:00","updateduk":"Apr 23, 2018 at 22:19 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","bpi":{"USD":{"code":"USD","rate":"8,925.0138","description":"United States Dollar","rate_float":8925.0138},"GBP":{"code":"GBP","rate":"6,402.3854","description":"British Pound Sterling","rate_float":6402.3854}}};
+let f = '{"time":{"updated":"Apr 23, 2018 21:19:00 UTC","updatedISO":"2018-04-23T21:19:00+00:00","updateduk":"Apr 23, 2018 at 22:19 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","bpi":{"USD":{"code":"USD","rate":"8,925.0138","description":"United States Dollar","rate_float":8925.0138},"GBP":{"code":"GBP","rate":"6,402.3854","description":"British Pound Sterling","rate_float":6402.3854}}}';
 
 
 
@@ -100,7 +100,7 @@ describe('jPretty - json', () => {
   });
   
   it("complex json", (done) => {
-    chai.expect(fj).to.equal('{}.time.updated = Apr 23, 2018 21:19:00 UTC\n{}.time.updatedISO = 2018-04-23T21:19:00+00:00\n{}.time.updateduk = Apr 23, 2018 at 22:19 BST\n{}.disclaimer = This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org\n{}.bpi.USD.code = USD\n{}.bpi.USD.rate = 8,925.0138\n{}.bpi.USD.description = United States Dollar\n{}.bpi.USD.rate_float = 8925.0138\n{}.bpi.GBP.code = GBP\n{}.bpi.GBP.rate = 6,402.3854\n{}.bpi.GBP.description = British Pound Sterling\n{}.bpi.GBP.rate_float = 6402.3854\n');
+    chai.expect(fj).to.equal('{}.time.updated = Apr23,201821:19:00UTC\n{}.time.updatedISO = 2018-04-23T21:19:00+00:00\n{}.time.updateduk = Apr23,2018at22:19BST\n{}.disclaimer = ThisdatawasproducedfromtheCoinDeskBitcoinPriceIndex(USD).Non-USDcurrencydataconvertedusinghourlyconversionratefromopenexchangerates.org\n{}.bpi.USD.code = USD\n{}.bpi.USD.rate = 8,925.0138\n{}.bpi.USD.description = UnitedStatesDollar\n{}.bpi.USD.rate_float = 8925.0138\n{}.bpi.GBP.code = GBP\n{}.bpi.GBP.rate = 6,402.3854\n{}.bpi.GBP.description = BritishPoundSterling\n{}.bpi.GBP.rate_float = 6402.3854\n');
     done();
   });
 
