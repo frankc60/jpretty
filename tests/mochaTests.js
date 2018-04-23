@@ -90,7 +90,7 @@ describe('jPretty - json', () => {
   });
 
   it("convert a double quote string into json", (done) => {
-    chai.expect(dj).to.equal('{}.a4 = 1\n{}.b4 = 2\n');
+    chai.expect(dj).to.equal('{}.0 = {\n{}.1 = "\n{}.2 = a\n{}.3 = 4\n{}.4 = "\n{}.5 = :\n{}.6 = 1\n{}.7 = ,\n{}.8 = "\n{}.9 = b\n{}.10 = 4\n{}.11 = "\n{}.12 = :\n{}.13 = 2\n{}.14 = }\n');
     done();
   });
 
