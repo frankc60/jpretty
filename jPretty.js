@@ -1,8 +1,8 @@
 /**
  * This module prettifes a json object. Returning json in a friendly to read key = value layout. 
  * Dot delimiters are used to delimit the json object hierarchy.
- * @param {object} input text or object in a json format.
- * @returns {string} shows the json input in a easy to read layout.
+ * @param {object} strEvents text or object in a json format.
+ * @returns {string} shows the json input in a easy to read key=value format.
  */
 const prettyJson = (strEvents) => {
   let tmp = '';
@@ -27,12 +27,22 @@ const prettyJson = (strEvents) => {
   return tmp;
 };
 
+
+/**
+ * Tidies up the json into a correct javascript object notation.
+ * 
+ * @param {object} obj text or object.
+ * calls the main prettyJson module passing the json obj as argument.
+ */
 const jPretty = (obj) => {
   // make sure data is a json obj
+  if(typeof obj === "string") {
+    obj = obj.replace(/'/g,'"');
+    obj = obj.replace(/([,|{|\s|])([a-zA-Z0-9]*?)([\s|]*\:)/g,'$1"$2"$3');
+  }
   let gl;
   try {
     const p = JSON.parse(obj); 
-    //console.log("already stringified")
     gl = obj; // already stringified
   } catch (e) { // not stringified
     try {

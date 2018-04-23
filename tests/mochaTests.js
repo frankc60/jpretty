@@ -40,9 +40,16 @@ d: "end"
 
 let c = '{"a":1, "b":2}';
 
+let d = '{a4:1, b4:2}';
+let e = "{'a':1, 'b':2}";
+
+
 const aj = jPretty(a);
 const bj = jPretty(b);
 const cj = jPretty(c);
+const dj = jPretty(d);
+const ej = jPretty(e);
+
 
 console.log(`TEST 1-
 ${aj}`);
@@ -50,6 +57,11 @@ console.log(`TEST 2-
 ${bj}`);
 console.log(`TEST 3-
 ${cj}`);
+console.log(`TEST 4-
+${dj}`);
+console.log(`TEST 5-
+${ej}`);
+
 
 
 describe('jPretty - json', () => {
@@ -68,6 +80,14 @@ describe('jPretty - json', () => {
     done();
   });
 
+  it("convert a double quote string into json", (done) => {
+    chai.expect(dj).to.equal('{}.a4 = 1\n{}.b4 = 2\n');
+    done();
+  });
 
+  it("convert a double quote with single quotes string into json", (done) => {
+    chai.expect(ej).to.equal('{}.a = 1\n{}.b = 2\n');
+    done();
+  });
   
 });
