@@ -9,13 +9,14 @@ const prettyJson = (strEvents) => {
   const events = JSON.parse(strEvents); // json needs to arrive stringified
 
   function pJson(events, top = '') {
-    console.log("events:" + JSON.stringify(events))
+   // console.log("events:" + JSON.stringify(events))
     Object.keys(events).forEach((i) => {
       if (typeof events[i] === 'object') {
         let rtn;
         if (Object.prototype.toString.call(events) === '[object Array]') {
           rtn = (`${top}[${i}]`);
         } else { rtn = (`${top}.${i}`); }
+        if(events[i] == null) { return rtn}
         pJson(events[i], rtn);
       } else if (Object.prototype.toString.call(events) === '[object Array]') {
         tmp += `{}${top}[${i}] = ${events[i]}\n`;
@@ -24,8 +25,13 @@ const prettyJson = (strEvents) => {
       }
     });
   }
-  //pJson(events);
-  return tmp;
+  if (events == null) {
+    return tmp
+    } else {
+     // console.log("events not equal null, = " + events)
+    pJson(events);
+  }
+ // return tmp;
 };
 
 
