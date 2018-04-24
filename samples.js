@@ -45,4 +45,11 @@ console.log(jPretty("{ vv: 1, kk: 2}"));
 
 console.log(jPretty(xx));
 
-console.log(jPretty(new Date));
+//console.log(jPretty(new Date));
+
+console.log(jPretty('{ "a": 1, "b": 2}'));
+console.log(jPretty({ a: 1, b: 2}));
+console.log(jPretty({ "a": 1, "b": 2}));
+console.log(jPretty({ 'a': 1, 'b': 2}));
+console.log(jPretty("{ 'a': 1, 'b': 2}"));
+console.log(jPretty("{ a: 1, b: 2}"));

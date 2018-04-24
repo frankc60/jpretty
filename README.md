@@ -104,6 +104,5 @@ console.log(jPretty("{ 'a': 1, 'b': 2}"));
 console.log(jPretty("{ a: 1, b: 2}"));
 
 //invalid
-//jpretty will not accept json surrounded by double quotes
-// ?? since v.1.1 all input styles will work.
+// ?? since v1.1.5 all input styles will work.
 ```
