@@ -9,6 +9,7 @@ const prettyJson = (strEvents) => {
   const events = JSON.parse(strEvents); // json needs to arrive stringified
 
   function pJson(events, top = '') {
+    console.log("events:" + JSON.stringify(events))
     Object.keys(events).forEach((i) => {
       if (typeof events[i] === 'object') {
         let rtn;
@@ -23,7 +24,7 @@ const prettyJson = (strEvents) => {
       }
     });
   }
-  pJson(events);
+  //pJson(events);
   return tmp;
 };
 
@@ -36,6 +37,7 @@ const prettyJson = (strEvents) => {
  */
 const jPretty = (obj) => {
   // make sure data is a json obj
+  
   if(typeof obj === "string") {
     obj = obj.replace(/\s/g,"");
     obj = obj.replace(/'/g,'"');
