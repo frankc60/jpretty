@@ -47,6 +47,7 @@ let f = '{"time":{"updated":"Apr 23, 2018 21:19:00 UTC","updatedISO":"2018-04-23
 
 let g = new Date();
 
+let i = {"category":null,"icon_url":"https:\/\/assets.chucknorris.host\/img\/avatar\/chuck-norris.png","id":"kb9fPTXsSzyPa8rmCAT6-A","url":"https:\/\/api.chucknorris.io\/jokes\/kb9fPTXsSzyPa8rmCAT6-A","value":"There are many people in this old world that have had an eyeball knocked out of one of their eye sockets because theysay that they didn\u0027t see a Chuck Norris roundhouse coming. They all say that they have learned a valuable lesson \u0026 from now on they\u0027ll always keep an eye out for Chuck Norris."};
 
 const aj = jPretty(a);
 const bj = jPretty(b);
