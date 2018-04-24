@@ -32,15 +32,17 @@ console.log(a.batters.batter[1].type);
 console.log(a.topping[2].type);
 
 //valid
- console.log(jPretty('{ "a": 1, "b": 2}')); 
+ console.log(jPretty('{ "c": 1, "b": 2}')); 
 console.log(jPretty({ a: 1, b: 2})); 
 console.log(jPretty({ "a": 1, "b": 2})); 
 console.log(jPretty({ 'a': 1, 'b': 2})); 
  
 //invalid
-console.log(jPretty("{ 'a': 1, 'b': 2}")); 
-console.log(jPretty("{ a: 1, b: 2}"));
+let h = new Date();
+console.log(jPretty("{ 'f': 222, 'b': 2}")); 
+
+console.log(jPretty("{ vv: 1, kk: 2}"));
 
 console.log(jPretty(xx));
 
-console.log(jPretty("asfdasdf"));
+console.log(jPretty(new Date));

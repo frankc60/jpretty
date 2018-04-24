@@ -45,7 +45,7 @@ let e = "{'a':1, 'b':2}";
 
 let f = '{"time":{"updated":"Apr 23, 2018 21:19:00 UTC","updatedISO":"2018-04-23T21:19:00+00:00","updateduk":"Apr 23, 2018 at 22:19 BST"},"disclaimer":"This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org","bpi":{"USD":{"code":"USD","rate":"8,925.0138","description":"United States Dollar","rate_float":8925.0138},"GBP":{"code":"GBP","rate":"6,402.3854","description":"British Pound Sterling","rate_float":6402.3854}}}';
 
-
+let g = new Date();
 
 
 const aj = jPretty(a);
@@ -54,7 +54,7 @@ const cj = jPretty(c);
 const dj = jPretty(d);
 const ej = jPretty(e);
 const fj = jPretty(f);
-
+const gj = jPretty(g);
 
 console.log(`TEST 1-
 ${aj}`);
@@ -68,6 +68,8 @@ console.log(`TEST 5-
 ${ej}`);
 console.log(`TEST 6-
 ${fj}`);
+console.log(`TEST 7-
+${gj}`);
 
 
 
@@ -90,7 +92,7 @@ describe('jPretty - json', () => {
   });
 
   it("convert a double quote string into json", (done) => {
-    chai.expect(dj).to.equal('{}.0 = {\n{}.1 = "\n{}.2 = a\n{}.3 = 4\n{}.4 = "\n{}.5 = :\n{}.6 = 1\n{}.7 = ,\n{}.8 = "\n{}.9 = b\n{}.10 = 4\n{}.11 = "\n{}.12 = :\n{}.13 = 2\n{}.14 = }\n');
+    chai.expect(dj).to.equal('{}.a4 = 1\n{}.b4 = 2\n');
     done();
   });
 
@@ -104,5 +106,14 @@ describe('jPretty - json', () => {
     done();
   });
 
+  it("non json object", (done) => {
+    chai.expect(gj).to.be.an('error');
+    //chai.expect(gj).to.throw(Error);
+    //chai.expect(gj).to.include('Error: jpretty: input is not recognised json:');
+    done();
+  });
+
+
+  
 
 });

@@ -46,21 +46,34 @@ const jPretty = (obj) => {
     const p = JSON.parse(obj); 
     gl = obj; // already stringified
   } catch (e) { // not stringified
-    try {
+    //try {
       if(typeof obj === "string") {
         obj = obj.replace(/([,|{|\s|])([a-zA-Z0-9]*?)([\s|]*\:)/g,'$1"$2"$3');
       }
       // console.log("make into a string")
-    
+      //obj = obj.replace(/"/g,"'");
       const s = JSON.stringify(obj);
       const k = JSON.parse(JSON.stringify(obj));
- //     if (k && typeof k === 'object') {
+       if (k && typeof k === 'object') {
         gl = s;
-  //    }
+      } else {
+        if(typeof obj === "string") {
+        //console.log("ERROR: " + );
+        obj = obj.replace(/"/g,"'");
+        obj = obj.replace(/'/g,'"');
+        
+        gl = ((obj));
+        } else {
+          return new Error(`jpretty: input is not recognised json: ${typeof obj}- ${JSON.stringify(obj)}`);
+        }
+        //
+      }
     //  throw Error("not json "+ JSON.stringify(obj))
-    } catch (er) {
-    // console.log("error " + er)
-    }
+   /*  } catch (er) {
+
+     console.log("sddsdsdsdssddsdsdsdsdsdssddsds " + er)
+     }
+    */
   }
 
   return prettyJson(gl);
