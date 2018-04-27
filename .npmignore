@@ -1,0 +1,5 @@
+node_modules
+samples.js
+.vscode/*.*
+.travis.yml
+tests/*.*
