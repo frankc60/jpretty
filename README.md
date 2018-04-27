@@ -103,6 +103,5 @@ console.log(jPretty({ 'a': 1, 'b': 2}));
 console.log(jPretty("{ 'a': 1, 'b': 2}"));
 console.log(jPretty("{ a: 1, b: 2}"));
 
-//invalid
-// ?? since v1.1.5 all input styles will work.
+// since v1.1.5 all of above input styles will work.
 ```
