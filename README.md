@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.org/frankc60/jpretty.svg?branch=master)](https://travis-ci.org/frankc60/jpretty)
 [![Join the chat at https://gitter.im/jprettyMod/Lobby](https://badges.gitter.im/jprettyMod/Lobby.svg)](https://gitter.im/jprettyMod/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Make `json` more Pretty. Display `json` using dot delimiter and a key = value output.
+Make `json` more Pretty. Display `json` in an easy to read layout, using **dot delimiters** with a **key = value** output.
 
 ## What is json ?
 JSON stands for **J**ava**S**cript **O**bject **N**otion, and is a syntax for storing and exchanging data written in text, that can be converted into JavaScript object notation, making it easy to work with.
