@@ -110,8 +110,10 @@ console.log(jPretty("{ a: 1, b: 2}"));
 
 ## run in your browser pages
 
-`jPretty` works in your client side browser also,
-just add the `<script>` tag and then reference it as the variable `jPretty`.
+`jPretty` works in your client side **browser** also.
+
+Just add the `<script>` tag pointing to the module `jPretty.js`.
+You can then reference it as the variable `jPretty` from your client-side js code.
 
 ```html
 ...
