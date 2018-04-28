@@ -3,3 +3,4 @@ samples.js
 .vscode/*.*
 .travis.yml
 tests/*.*
+test.html
