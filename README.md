@@ -5,7 +5,7 @@
 [![Join the chat at https://gitter.im/jprettyMod/Lobby](https://badges.gitter.im/jprettyMod/Lobby.svg)](https://gitter.im/jprettyMod/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Make `json` more Pretty. Transform `json` into an easy to read layout, with **dot delimiters** and **key = value** output.
-jPretty works in both **NodeJS** server side and the [**client side browser**](#run-in-your-browser-pages).
+jPretty works in **NodeJS** server-side as well as the [**browser** client-side](#run-in-your-browser-pages).
 
 ## What is json ?
 JSON stands for **J**ava**S**cript **O**bject **N**otion, and is a syntax for storing and exchanging data written in text, that can be converted into JavaScript object notation, making it easy to work with.
