@@ -4,3 +4,4 @@ samples.js
 .travis.yml
 tests/*.*
 test.html
+*.json
