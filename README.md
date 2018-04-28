@@ -8,7 +8,7 @@ Make `json` more pretty. Transform `json` into an easy to read layout, with **do
 
 jPretty works in **NodeJS** server-side as well as on the [**browser** client-side](#run-in-your-browser-pages).
 
-See `jPretty` working online: [try it online](http://jstrip.coffeeboat.co.uk/)
+See `jPretty` working: [try it online](http://jstrip.coffeeboat.co.uk/)
 
 ## What is json ?
 JSON stands for **J**ava**S**cript **O**bject **N**otion, and is a syntax for storing and exchanging data written in text, that can be converted into JavaScript object notation, making it easy to work with.
