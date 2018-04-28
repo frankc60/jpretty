@@ -6,7 +6,7 @@
 
 Make `json` more pretty. Transform `json` into an easy to read layout, with **dot delimiters** and **key = value** output.
 
-jPretty works in **NodeJS** server-side as well as the [**browser** client-side](#run-in-your-browser-pages).
+jPretty works in **NodeJS** server-side as well as on the [**browser** client-side](#run-in-your-browser-pages).
 
 ## What is json ?
 JSON stands for **J**ava**S**cript **O**bject **N**otion, and is a syntax for storing and exchanging data written in text, that can be converted into JavaScript object notation, making it easy to work with.
@@ -14,7 +14,7 @@ JSON is used alot in APIs: sending and retrieving data across the Web.
 
 For more info check out [w3schools.com](https://www.w3schools.com/js/js_json_intro.asp).
 
-## jpretty examples
+## examples
 
 ```js
 let jPretty = require("jpretty");  //in nodeJS
@@ -110,7 +110,7 @@ console.log(jPretty("{ a: 1, b: 2}"));
 
 ## run in your browser pages
 
-`jPretty` works in your client side **browser** also.
+`jPretty` works on your client side **browser** also.
 
 Just add the `<script>` tag pointing to the module `jPretty.js`.
 You can then reference it as the variable `jPretty` from your client-side js code.
