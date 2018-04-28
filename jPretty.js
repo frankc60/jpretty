@@ -15,24 +15,17 @@ const prettyJson = (strEvents) => {
         if (Object.prototype.toString.call(events) === '[object Array]') {
           rtn = (`${top}[${i}]`);
         } else { rtn = (`${top}.${i}`); }
-       // if(events[i] == null) { return tmp + rtn; } else {
           pJson(events[i], rtn);
-       // }
       } else if (Object.prototype.toString.call(events) === '[object Array]') {
         tmp += `{}${top}[${i}] = ${events[i]}\n`;
-     // } else if (Object.prototype.toString.call(events) == null) {
-      //  tmp += `{}${top}.${i} = null\n`;
       } else {
         tmp += `{}${top}.${i} = ${events[i]}\n`;
       }
     });
   }
- /*  if (events == null) {
-    return tmp
-    } else { */
-     // console.log("events not equal null, = " + events)
+
     pJson(events);
-//  }
+    
   return tmp;
 };
 
@@ -43,7 +36,7 @@ const prettyJson = (strEvents) => {
  * @param {object} obj text or object.
  * calls the main prettyJson module passing the json obj as argument.
  */
-const jPretty = (obj) => {
+function jPretty(obj) {
   // make sure data is a json obj
   
   if(typeof obj === "string") {
@@ -56,12 +49,10 @@ const jPretty = (obj) => {
     const p = JSON.parse(obj); 
     gl = obj; // already stringified
   } catch (e) { // not stringified
-    //try {
       if(typeof obj === "string") {
         obj = obj.replace(/([,|{|\s|])([a-zA-Z0-9]*?)([\s|]*\:)/g,'$1"$2"$3');
       }
-      // console.log("make into a string")
-      //obj = obj.replace(/"/g,"'");
+
       const s = JSON.stringify(obj);
       const k = JSON.parse(JSON.stringify(obj));
        if (k && typeof k === 'object') {
@@ -76,17 +67,23 @@ const jPretty = (obj) => {
         } else {
           return new Error(`jpretty: input is not recognised json: ${typeof obj}- ${JSON.stringify(obj)}`);
         }
-        //
       }
-    //  throw Error("not json "+ JSON.stringify(obj))
-   /*  } catch (er) {
-
-     console.log("sddsdsdsdssddsdsdsdsdsdssddsds " + er)
-     }
-    */
   }
 
-  return prettyJson(gl);
+  return (() => {
+    let jp = prettyJson(gl); 
+    if(typeof window !== 'undefined') {
+      console.log("browser only");
+        jp = jp.replace(/\{\}\./g,"<br/>{}.");
+    }
+    //prettyJson(gl);
+    return jp;
+  })()
 };
 
-module.exports = jPretty;
+
+if ( typeof module === 'object' && module && typeof module.exports === 'object' ) {
+  module.exports = jPretty;  //nodejs
+} else {
+  window.jPretty = jPretty;  //browser
+}

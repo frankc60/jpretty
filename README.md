@@ -4,7 +4,8 @@
 [![Build Status](https://travis-ci.org/frankc60/jpretty.svg?branch=master)](https://travis-ci.org/frankc60/jpretty)
 [![Join the chat at https://gitter.im/jprettyMod/Lobby](https://badges.gitter.im/jprettyMod/Lobby.svg)](https://gitter.im/jprettyMod/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Make `json` more Pretty. Transform `json` into an easy to read layout, with **dot delimiters** and **key = value** output.
+Make `json` more Pretty. Transform `json` into an easy to read layout, with **dot delimiters** and **key = value** output. 
+jPrett works in **NodeJS** as well as your [**client side browser**](#run_in_your_browser_pages).
 
 ## What is json ?
 JSON stands for **J**ava**S**cript **O**bject **N**otion, and is a syntax for storing and exchanging data written in text, that can be converted into JavaScript object notation, making it easy to work with.
@@ -15,7 +16,7 @@ For more info check out [w3schools.com](https://www.w3schools.com/js/js_json_int
 ## jpretty examples
 
 ```js
-let jPretty = require("jpretty");
+let jPretty = require("jpretty");  //in nodeJS
 
 let json1 = {
     "id": "0001",
@@ -104,4 +105,20 @@ console.log(jPretty("{ 'a': 1, 'b': 2}"));
 console.log(jPretty("{ a: 1, b: 2}"));
 
 // since v1.1.5 all of above input styles will work.
+```
+
+## run in your browser pages
+
+`jPretty` works in your client side browser also,
+just add the `<script>` tag and then reference it as the variable `jPretty`.
+
+```html
+...
+<p id="jpretty"></p>
+<script src="/npmModules/jPretty.js"></script>
+<script>
+  document.getElementById("jpretty").innerHTML = jPretty('{ "a": 1, "b": 2}');
+</script>
+</body>
+...
 ```
