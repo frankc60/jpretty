@@ -74,7 +74,7 @@ function jPretty(obj) {
     let jp = prettyJson(gl); 
     if(typeof window !== 'undefined') {
       console.log("browser only");
-        jp = jp.replace(/\{\}\./g,"<br/>{}.");
+        jp = jp.replace(/\{\}/g,"<br/>{}");
     }
     //prettyJson(gl);
     return jp;
