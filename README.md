@@ -8,13 +8,25 @@ Make `json` more pretty. Transform `json` into an easy to read layout, with **do
 
 jPretty works in **NodeJS** server-side as well as on the [**browser** client-side](#run-in-your-browser-pages).
 
-See `jPretty` working: [try it online](http://jstrip.coffeeboat.co.uk/)
+See `jPretty` working in your browser: [try it online](http://jstrip.coffeeboat.co.uk/)
 
 ## What is json ?
 JSON stands for **J**ava**S**cript **O**bject **N**otion, and is a syntax for storing and exchanging data written in text, that can be converted into JavaScript object notation, making it easy to work with.
 JSON is used alot in APIs: sending and retrieving data across the Web.
 
 For more info check out [w3schools.com](https://www.w3schools.com/js/js_json_intro.asp).
+
+## What is jPretty?
+Some `json` is complex to read to desifer property names for values. This is normally due to the nesting of arrays within objects etc etc. **jPretty** simplifies this for you by displaying the `json` in an easy to read layout.
+json: `[1,{a:2,b:[3,4,{c:5}]}]` tranforms into:
+
+```js
+{}[0] = 1 
+{}[1].a = 2 
+{}[1].b[0] = 3 
+{}[1].b[1] = 4 
+{}[1].b[2].c = 5
+```
 
 ## examples
 
