@@ -6,7 +6,7 @@
 
 Make `json` more pretty. Transform `json` into an easy to read layout, with **dot delimiters** and **key = value** output.
 
-jPretty works in **NodeJS** server-side as well as on the [**browser** client-side](#run-in-your-browser-pages).
+jPretty works in **NodeJS** server-side as well as on the [**browser** client-side](#run-jpretty-in-your-browser-pages).
 
 See `jPretty` working in your browser: [try it online](http://jstrip.coffeeboat.co.uk/)
 
