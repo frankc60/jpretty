@@ -23,12 +23,9 @@ const prettyJson = (strEvents) => {
       }
     });
   }
-
-    pJson(events);
-    
+  pJson(events);
   return tmp;
 };
-
 
 /**
  * Tidies up the json into a correct javascript object notation.
@@ -79,7 +76,6 @@ function jPretty(obj) {
     return jp;
   })()
 };
-
 
 if ( typeof module === 'object' && module && typeof module.exports === 'object' ) {
   module.exports = jPretty;  //nodejs
