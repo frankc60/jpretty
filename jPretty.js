@@ -73,10 +73,9 @@ function jPretty(obj) {
   return (() => {
     let jp = prettyJson(gl); 
     if(typeof window !== 'undefined') {
-      console.log("jPretty loaded in browser"); 
+      console.log("jPretty loaded in browser");
         jp = jp.replace(/\{\}/g,"<br/>{}");
     }
-    //prettyJson(gl);
     return jp;
   })()
 };
