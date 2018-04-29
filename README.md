@@ -28,7 +28,7 @@ for example, **json**: `[1,{a:2,b:[3,4,{c:5}]}]` tranforms into:
 {}[1].b[1] = 4 
 {}[1].b[2].c = 5 //javascript compatible
 
-console.log( json1.[1].b[2].c ); // 5
+console.log( json1[1].b[2].c ); // 5
 ```
 
 ## examples
