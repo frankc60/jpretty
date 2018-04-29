@@ -9,7 +9,8 @@
   },
   "keywords": [
     "json",
-    "jstrip"
+    "jstrip",
+    "jpretty"
   ],
   "repository": {
     "type": "git",
