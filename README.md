@@ -135,10 +135,14 @@ You can then reference it as the variable `jPretty` from your client-side js cod
 ```html
 ...
 <p id="jpretty"></p>
-<script src="/npmModules/jPretty.js"></script>
+
+<script src="/Module-Location/jPretty.js"></script>
+
 <script>
   document.getElementById("jpretty").innerHTML = jPretty('{ "a": 1, "b": 2}');
 </script>
 </body>
 ...
 ```
+
+See a [working sample online](http://jstrip.coffeeboat.co.uk/).
