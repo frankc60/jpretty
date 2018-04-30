@@ -5,3 +5,7 @@ samples.js
 tests/*.*
 test.html
 *.json
+src/*.*
+.nyc_output
+.gitignore
+src/
