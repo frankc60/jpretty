@@ -17,6 +17,7 @@ JSON uses a JavaScript syntax and is used for storing and transporting data over
 For more info check out [w3schools.com](https://www.w3schools.com/js/js_json_intro.asp).
 
 ## What is jPretty?
+
 Some `json` is complex to read to decipher property names for values. This is normally due to the nesting of arrays within objects etc etc. **jPretty** simplifies this for you by displaying the `json` in an *easy to read layout*, that is JavaScript compatible. 
 
 for example, **json**: `[1,{a:2,b:[3,4,{c:5}]}]` tranforms into:
@@ -30,6 +31,46 @@ for example, **json**: `[1,{a:2,b:[3,4,{c:5}]}]` tranforms into:
 
 console.log( json1[1].b[2].c ); // 5
 ```
+
+## syntax
+
+`JSON` data by definition is written as name/value pairs, consisting of a field name (in double quotes), followed by a colon, followed by a value: `{ "name" : "value" }`
+
+`jpretty` accepts multiple styles as it converts the input into `json`. The following are valid syntax.
+
+```js
+//valid
+console.log(jPretty('{ "a": 1, "b": 2}'));
+console.log(jPretty({ a: 1, b: 2}));
+console.log(jPretty({ "a": 1, "b": 2}));
+console.log(jPretty({ 'a': 1, 'b': 2}));
+console.log(jPretty("{ 'a': 1, 'b': 2}"));
+console.log(jPretty("{ a: 1, b: 2}"));
+
+// since v1.1.5 all of above input styles will work.
+```
+
+## run jPretty in your browser pages
+
+`jPretty` works on your client side **browser** also.
+
+Just add the `<script>` tag pointing to the module `jPretty.js`.
+You can then reference it as the variable `jPretty` from your client-side js code.
+
+```html
+...
+<p id="jpretty"></p>
+
+<script src="/Module-Location/jPretty.js"></script>
+
+<script>
+  document.getElementById("jpretty").innerHTML = jPretty('{ "a": 1, "b": 2}');
+</script>
+</body>
+...
+```
+
+See a [working sample online](http://jstrip.coffeeboat.co.uk/).
 
 ## examples
 
@@ -107,42 +148,3 @@ console.log(jPretty(json2));
 {}.d.db.dba = 123
 ```
 
-## syntax
-
-`JSON` data by definition is written as name/value pairs, consisting of a field name (in double quotes), followed by a colon, followed by a value: `{ "name" : "value" }`
-
-`jpretty` accepts multiple styles as it converts the input into `json`. The following are valid syntax.
-
-```js
-//valid
-console.log(jPretty('{ "a": 1, "b": 2}'));
-console.log(jPretty({ a: 1, b: 2}));
-console.log(jPretty({ "a": 1, "b": 2}));
-console.log(jPretty({ 'a': 1, 'b': 2}));
-console.log(jPretty("{ 'a': 1, 'b': 2}"));
-console.log(jPretty("{ a: 1, b: 2}"));
-
-// since v1.1.5 all of above input styles will work.
-```
-
-## run jPretty in your browser pages
-
-`jPretty` works on your client side **browser** also.
-
-Just add the `<script>` tag pointing to the module `jPretty.js`.
-You can then reference it as the variable `jPretty` from your client-side js code.
-
-```html
-...
-<p id="jpretty"></p>
-
-<script src="/Module-Location/jPretty.js"></script>
-
-<script>
-  document.getElementById("jpretty").innerHTML = jPretty('{ "a": 1, "b": 2}');
-</script>
-</body>
-...
-```
-
-See a [working sample online](http://jstrip.coffeeboat.co.uk/).
