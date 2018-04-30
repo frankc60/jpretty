@@ -35,7 +35,6 @@ const prettyJson = (strEvents) => {
  */
 function jPretty(obj) {
   // make sure data is a json obj
-  
   if(typeof obj === "string") {
     obj = obj.replace(/\s/g,"");
     obj = obj.replace(/'/g,'"');
