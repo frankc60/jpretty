@@ -16,9 +16,9 @@ JSON uses a JavaScript syntax and is used for storing and transporting data over
 
 For more info check out [w3schools.com](https://www.w3schools.com/js/js_json_intro.asp).
 
-## What is jPretty?
+## What is jPretty ?
 
-Some `json` is complex to read to decipher property names for values. This is normally due to the nesting of arrays within objects etc etc. **jPretty** simplifies this for you by displaying the `json` in an *easy to read layout*, that is JavaScript compatible. 
+Some `json` is complex to read to decipher property names for values. This is normally due to the nesting of arrays within objects within arrays etc etc. **jPretty** simplifies this for you by displaying the `json` in an *easy to read layout*, that is JavaScript compatible.
 
 for example, **json**: `[1,{a:2,b:[3,4,{c:5}]}]` tranforms into:
 
