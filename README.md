@@ -58,17 +58,18 @@ Just add the `<script>` tag pointing to the module `jPretty.js`.
 You can then reference it as the variable `jPretty` from your client-side js code.
 
 ```html
-...
-<p id="jpretty"></p>
+<body>
+ ...
+ <p id="jpretty"></p>
 
-<script src="/Module-Location/jPretty.js"></script>
+ <script src="/Module-Location/jPretty.js"></script>
 
-<script>
-  let jsonData = { "a": 1, "b": 2};
-  document.getElementById("jpretty").innerHTML = jPretty(jsonData);
-</script>
+ <script>
+   let jsonData = { "a": 1, "b": 2};
+   document.getElementById("jpretty").innerHTML = jPretty(jsonData);
+ </script>
 </body>
-...
+</html>
 ```
 
 See a [working sample online](http://jstrip.coffeeboat.co.uk/).
