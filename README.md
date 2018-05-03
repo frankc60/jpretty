@@ -65,7 +65,7 @@ You can then reference it as the variable `jPretty` from your client-side js cod
  <script src="/Module-Location/jPretty.js"></script>
 
  <script>
-   let jsonData = { "a": 1, "b": 2};
+   let jsonData = { "a": 1, "b": 2 };
    document.getElementById("jpretty").innerHTML = jPretty(jsonData);
  </script>
 </body>
