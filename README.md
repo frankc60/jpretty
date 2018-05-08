@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.org/frankc60/jpretty.svg?branch=master)](https://travis-ci.org/frankc60/jpretty)
 [![Join the chat at https://gitter.im/jprettyMod/Lobby](https://badges.gitter.im/jprettyMod/Lobby.svg)](https://gitter.im/jprettyMod/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Make `json` more pretty. Transform `json` into an easy to read layout, with **dot delimiters** and **key = value** output.
+Make `json` more pretty. Transform `json` into an easy to read layout - js object notation, with **dot delimiters** and **key = value** output.
 
 jPretty works in **NodeJS** server-side as well as on the [**browser** client-side](#run-jpretty-in-your-browser-pages).
 
