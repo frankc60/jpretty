@@ -1,6 +1,6 @@
 {
   "name": "jpretty",
-  "version": "1.3.7",
+  "version": "1.3.8",
   "description": "pretty layout of json",
   "main": "jPretty.js",
   "scripts": {
