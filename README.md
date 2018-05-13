@@ -50,7 +50,7 @@ console.log(jPretty("{ a: 1, b: 2}"));
 // since v1.1.5 all of above input styles will work.
 ```
 
-## run jPretty in your browser pages
+## run jPretty in your browser pages - client side
 
 `jPretty` works on your client side **browser** also.
 
